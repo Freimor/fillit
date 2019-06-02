@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 16:29:22 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/02 16:37:54 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/02 16:44:59 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,18 @@ void	block_add(block **base, block *new)
 		return ;
 	new->next = *base;
 	*base = new;
+}
+
+block	*block_check(block **base, int index)
+{
+	block	*ptr;
+
+	ptr = *base;
+	while (ptr)
+	{
+		if (ptr->index == index)
+			return (ptr);
+		ptr = ptr->next;
+	}
+	return (0);
 }

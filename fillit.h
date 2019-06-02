@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:25:58 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/02 16:30:47 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/02 16:47:22 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,10 @@ struct  mass
     struct block b4;
     struct mass *next;
 };
+
+block	*block_new(int x, int y, int index);
+int		block_del(block **base, int index);
+void	block_add(block **base, block *new);
+block	*block_check(block **base, int index);
+
 #endif
