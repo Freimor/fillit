@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:25:58 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/02 16:47:22 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/02 17:50:04 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,20 +27,18 @@
 typedef struct		block
 {
 	int	x;
-	int	y;
-	int index;
-	struct block	*next;
+	int	y;		
+	int index;             //ненужны, сразу кидать в tetri на этапе read
+	struct block	*next; //
 }					block;
-
-
-struct  mass
+typedef struct		tetri
 {
-    struct block b1;
-    struct block b2;
-    struct block b3;
-    struct block b4;
-    struct mass *next;
-};
+	struct block b1;
+	struct block b2;
+	struct block b3;
+	struct block b4;
+	struct tetri *next;
+}					tetri;
 
 block	*block_new(int x, int y, int index);
 int		block_del(block **base, int index);
