@@ -86,6 +86,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sskinner/gitex/Fillit/block_funk.c">
+			<Option target="Fillit"/>
+		</Unit>
 		<Unit filename="/Users/sskinner/gitex/Fillit/fillit.c">
 			<Option target="Fillit"/>
 		</Unit>
@@ -296,7 +299,7 @@
 		<Unit filename="/Users/sskinner/gitex/Fillit/libft/libft.h">
 			<Option target="Fillit"/>
 		</Unit>
-		<Unit filename="/Users/sskinner/gitex/Fillit/tetri.txt">
+		<Unit filename="/Users/sskinner/gitex/Fillit/tetri_funk.c">
 			<Option target="Fillit"/>
 		</Unit>
 		<Unit filename="/Users/sskinner/gitex/Fillit/valid.c">

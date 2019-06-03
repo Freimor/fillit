@@ -6,11 +6,11 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:49:59 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/01 18:51:01 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/03 16:22:04 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+/*#include "fillit.h"
 #include <stdio.h>
 
 char	**analize(char *str)
@@ -72,4 +72,4 @@ int main(void)
 	i = 0;
 
 	return (0);
-}
+}*/

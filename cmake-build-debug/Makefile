@@ -123,6 +123,33 @@ Fillit/fast:
 	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/build
 .PHONY : Fillit/fast
 
+block_funk.o: block_funk.c.o
+
+.PHONY : block_funk.o
+
+# target to build an object file
+block_funk.c.o:
+	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/block_funk.c.o
+.PHONY : block_funk.c.o
+
+block_funk.i: block_funk.c.i
+
+.PHONY : block_funk.i
+
+# target to preprocess a source file
+block_funk.c.i:
+	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/block_funk.c.i
+.PHONY : block_funk.c.i
+
+block_funk.s: block_funk.c.s
+
+.PHONY : block_funk.s
+
+# target to generate assembly for a file
+block_funk.c.s:
+	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/block_funk.c.s
+.PHONY : block_funk.c.s
+
 fillit.o: fillit.c.o
 
 .PHONY : fillit.o
@@ -1959,6 +1986,33 @@ libft/ft_wordlen.c.s:
 	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/libft/ft_wordlen.c.s
 .PHONY : libft/ft_wordlen.c.s
 
+tetri_funk.o: tetri_funk.c.o
+
+.PHONY : tetri_funk.o
+
+# target to build an object file
+tetri_funk.c.o:
+	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/tetri_funk.c.o
+.PHONY : tetri_funk.c.o
+
+tetri_funk.i: tetri_funk.c.i
+
+.PHONY : tetri_funk.i
+
+# target to preprocess a source file
+tetri_funk.c.i:
+	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/tetri_funk.c.i
+.PHONY : tetri_funk.c.i
+
+tetri_funk.s: tetri_funk.c.s
+
+.PHONY : tetri_funk.s
+
+# target to generate assembly for a file
+tetri_funk.c.s:
+	$(MAKE) -f CMakeFiles/Fillit.dir/build.make CMakeFiles/Fillit.dir/tetri_funk.c.s
+.PHONY : tetri_funk.c.s
+
 valid.o: valid.c.o
 
 .PHONY : valid.o
@@ -1995,6 +2049,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Fillit"
+	@echo "... block_funk.o"
+	@echo "... block_funk.i"
+	@echo "... block_funk.s"
 	@echo "... fillit.o"
 	@echo "... fillit.i"
 	@echo "... fillit.s"
@@ -2199,6 +2256,9 @@ help:
 	@echo "... libft/ft_wordlen.o"
 	@echo "... libft/ft_wordlen.i"
 	@echo "... libft/ft_wordlen.s"
+	@echo "... tetri_funk.o"
+	@echo "... tetri_funk.i"
+	@echo "... tetri_funk.s"
 	@echo "... valid.o"
 	@echo "... valid.i"
 	@echo "... valid.s"

@@ -928,9 +928,22 @@ CMakeFiles/Fillit.dir/libft/ft_wordlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fillit.dir/libft/ft_wordlen.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sskinner/gitex/Fillit/libft/ft_wordlen.c -o CMakeFiles/Fillit.dir/libft/ft_wordlen.c.s
 
+CMakeFiles/Fillit.dir/block_funk.c.o: CMakeFiles/Fillit.dir/flags.make
+CMakeFiles/Fillit.dir/block_funk.c.o: ../block_funk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Fillit.dir/block_funk.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit.dir/block_funk.c.o   -c /Users/sskinner/gitex/Fillit/block_funk.c
+
+CMakeFiles/Fillit.dir/block_funk.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fillit.dir/block_funk.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sskinner/gitex/Fillit/block_funk.c > CMakeFiles/Fillit.dir/block_funk.c.i
+
+CMakeFiles/Fillit.dir/block_funk.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fillit.dir/block_funk.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sskinner/gitex/Fillit/block_funk.c -o CMakeFiles/Fillit.dir/block_funk.c.s
+
 CMakeFiles/Fillit.dir/fillit.c.o: CMakeFiles/Fillit.dir/flags.make
 CMakeFiles/Fillit.dir/fillit.c.o: ../fillit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Fillit.dir/fillit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Fillit.dir/fillit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit.dir/fillit.c.o   -c /Users/sskinner/gitex/Fillit/fillit.c
 
 CMakeFiles/Fillit.dir/fillit.c.i: cmake_force
@@ -941,9 +954,22 @@ CMakeFiles/Fillit.dir/fillit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fillit.dir/fillit.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sskinner/gitex/Fillit/fillit.c -o CMakeFiles/Fillit.dir/fillit.c.s
 
+CMakeFiles/Fillit.dir/tetri_funk.c.o: CMakeFiles/Fillit.dir/flags.make
+CMakeFiles/Fillit.dir/tetri_funk.c.o: ../tetri_funk.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Fillit.dir/tetri_funk.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit.dir/tetri_funk.c.o   -c /Users/sskinner/gitex/Fillit/tetri_funk.c
+
+CMakeFiles/Fillit.dir/tetri_funk.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fillit.dir/tetri_funk.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sskinner/gitex/Fillit/tetri_funk.c > CMakeFiles/Fillit.dir/tetri_funk.c.i
+
+CMakeFiles/Fillit.dir/tetri_funk.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fillit.dir/tetri_funk.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sskinner/gitex/Fillit/tetri_funk.c -o CMakeFiles/Fillit.dir/tetri_funk.c.s
+
 CMakeFiles/Fillit.dir/valid.c.o: CMakeFiles/Fillit.dir/flags.make
 CMakeFiles/Fillit.dir/valid.c.o: ../valid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Fillit.dir/valid.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Fillit.dir/valid.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit.dir/valid.c.o   -c /Users/sskinner/gitex/Fillit/valid.c
 
 CMakeFiles/Fillit.dir/valid.c.i: cmake_force
@@ -1023,7 +1049,9 @@ Fillit_OBJECTS = \
 "CMakeFiles/Fillit.dir/libft/ft_tolower.c.o" \
 "CMakeFiles/Fillit.dir/libft/ft_toupper.c.o" \
 "CMakeFiles/Fillit.dir/libft/ft_wordlen.c.o" \
+"CMakeFiles/Fillit.dir/block_funk.c.o" \
 "CMakeFiles/Fillit.dir/fillit.c.o" \
+"CMakeFiles/Fillit.dir/tetri_funk.c.o" \
 "CMakeFiles/Fillit.dir/valid.c.o"
 
 # External object files for target Fillit
@@ -1096,11 +1124,13 @@ Fillit: CMakeFiles/Fillit.dir/libft/ft_strtrim.c.o
 Fillit: CMakeFiles/Fillit.dir/libft/ft_tolower.c.o
 Fillit: CMakeFiles/Fillit.dir/libft/ft_toupper.c.o
 Fillit: CMakeFiles/Fillit.dir/libft/ft_wordlen.c.o
+Fillit: CMakeFiles/Fillit.dir/block_funk.c.o
 Fillit: CMakeFiles/Fillit.dir/fillit.c.o
+Fillit: CMakeFiles/Fillit.dir/tetri_funk.c.o
 Fillit: CMakeFiles/Fillit.dir/valid.c.o
 Fillit: CMakeFiles/Fillit.dir/build.make
 Fillit: CMakeFiles/Fillit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Linking C executable Fillit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sskinner/gitex/Fillit/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable Fillit"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fillit.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

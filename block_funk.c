@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+/*#include "fillit.h"
 
 block	*block_new(int x, int y, int index)
 {
@@ -72,4 +72,4 @@ block	*block_check(block **base, int index)
 		ptr = ptr->next;
 	}
 	return (0);
-}
+}*/
