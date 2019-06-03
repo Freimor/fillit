@@ -61,6 +61,22 @@ void	tetri_add(tetri **base, tetri *new)
 	*base = new;
 }
 
+void	tetri_add_w_copy(tetri **base, tetri *new)
+{
+    tetri   *copy;
+
+    if (!(new))
+        return ;
+    if (!(copy = (tetri *)malloc(sizeof(tetri))))
+        return ;
+    copy->b1 = new->b1;
+    copy->b2 = new->b2;
+    copy->b3 = new->b3;
+    copy->b4 = new->b4;
+    copy->next = *base;
+    *base = copy;
+}
+
 /*tetri	*tetri_check(tetri **base, int index)
 {
 	block	*ptr;

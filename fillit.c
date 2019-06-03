@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 16:41:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/03 16:22:32 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/03 17:18:47 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,25 @@ static tetri	*tetri_build(tetri **base, int k, int x, int y)
 	else
 	{
 		if (k == 2)
+		{
             (*base)->b2.x = x;
             (*base)->b2.y = y;
+        }
         if (k == 3)
+        {
             (*base)->b3.x = x;
             (*base)->b3.y = y;
+        }
         if (k == 4)
+        {
             (*base)->b4.x = x;
             (*base)->b4.y = y;
+        }
     }
 	return (*base);
 }
 
-tetri   *detect_and_createtetri(char *str)
+static tetri   *detect_and_createtetri(char *str)
 {
     int		x;
     int		y;
@@ -73,12 +79,16 @@ int		reading(int fd)
 {
 	int		count;
 	char	str[21];
-	tetri	*tetri;
-	
-	while ((count = read(fd, str, 21)) > 20)//читаем 21 символ т/к (..#.\n)5х4 (один блок) + еще один \n
+	tetri   *base_tetri;
+	tetri	*buf_tetri;
+
+	base_tetri = NULL;
+	while ((count = read(fd, str, 21)) >= 20)//читаем 21 символ т/к (..#.\n)5х4 (один блок) + еще один \n ?? Работает, собирает цепь из фигур корректно (вроде)
 	{
 		str[20] = '\0';
-		tetri = detect_and_createtetri(str);
+		buf_tetri = detect_and_createtetri(str);
+		tetri_add_w_copy(&base_tetri, buf_tetri); //функция должна копить тетри в лист tetri_add_w_copy
+		free(buf_tetri);
 	}
     return (1);
 }

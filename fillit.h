@@ -44,8 +44,8 @@ int		block_del(block **base, int index);
 void	block_add(block **base, block *new);
 block	*block_check(block **base, int index);
 tetri	*tetri_new(block b1, block b2, block b3, block b4);
-tetri	*tetri_newONEBLOCK(block b1, int index);
 int		tetri_del(tetri **base, tetri *del);
 void	tetri_add(tetri **base, tetri *new);
+void	tetri_add_w_copy(tetri **base, tetri *new);
 
 #endif
