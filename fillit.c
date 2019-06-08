@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 16:41:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/03 17:18:47 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/08 17:25:15 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,55 @@ static tetri   *detect_and_createtetri(char *str)
     return (tetri);
 }
 
+static int validate(char *str)
+{
+	int	i;
+	int	j;
+	int	k;
+	int	stack[8]; //1 tetri = 8 coordinates
+
+	i = 0;
+	j = 0;
+	k = 0;
+	while (*str != '\0')
+	{
+		if (i > 20) //??
+			return (-1);
+		while (*str != '\n')
+		{
+			if (*str != '.' && *str != '#' /* && *str != '\n' && *str != '\0'*/) //не так должно быть
+				return (-1);
+			else if (*str == '#')
+			{
+				stack[k] = i;
+				stack[k++] = j;
+				k++;
+			} 
+			str++;
+			j++;
+		}
+		if (j != 4)
+			return (-1);
+		j = 0;
+		i = i + 4;
+	}
+	k = 0;
+	while (k < 6) //??
+	{
+		if ((stack[k] == stack[k + 2] && stack[k + 1] - stack[k + 3] == 1 || -1) || //можно ли так
+		(stack[k + 1] == stack[k + 3] && stack[k] - stack[k + 2] == 1 || -1))
+			k = k + 2;
+		else
+			return (-1);	
+	}
+	return (0);
+}
+
 int		reading(int fd)
 {
 	int		count;
 	char	str[21];
-	tetri   *base_tetri;
+	tetri	*base_tetri;
 	tetri	*buf_tetri;
 
 	base_tetri = NULL;
@@ -88,6 +132,7 @@ int		reading(int fd)
 		str[20] = '\0';
 		buf_tetri = detect_and_createtetri(str);
 		tetri_add_w_copy(&base_tetri, buf_tetri); //функция должна копить тетри в лист tetri_add_w_copy
+		validate; //неоч проверять блоки после создания
 		free(buf_tetri);
 	}
     return (1);
