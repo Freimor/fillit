@@ -6,40 +6,18 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 16:41:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/08 17:25:15 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/09 15:23:25 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-static tetri	*tetri_build(tetri **base, int k, int x, int y)
+static tetri	*tetri_build(tetri **base, int index, int x, int y)
 {
 	if (*base == NULL)
-	{
-        if (!(*base = (tetri *)malloc(sizeof(tetri))))
-            return (NULL);
-        (*base)->b1.x = x;
-        (*base)->b1.y = y;
-        return (*base);
-	}
-	else
-	{
-		if (k == 2)
-		{
-            (*base)->b2.x = x;
-            (*base)->b2.y = y;
-        }
-        if (k == 3)
-        {
-            (*base)->b3.x = x;
-            (*base)->b3.y = y;
-        }
-        if (k == 4)
-        {
-            (*base)->b4.x = x;
-            (*base)->b4.y = y;
-        }
-    }
+	    *base = tetri_new();
+	(*base)->x[index] = x;
+	(*base)->y[index] = y;
 	return (*base);
 }
 
@@ -49,9 +27,10 @@ static tetri   *detect_and_createtetri(char *str)
     int		y;
     int		index;
     int		l;
+    tetri   *base_tetri;
     tetri	*tetri;
 
-    index = 1;
+    index = 0;
     l = 0;
     x = 1;
     y = 1;
@@ -62,17 +41,19 @@ static tetri   *detect_and_createtetri(char *str)
         {
             if (str[l] == '#')
             {
-                tetri_build(&tetri, index, x, y); //собирается 4 блока, неплохо бы сдесь засунуть в tetri
+                tetri_build(&tetri, index, x, y);
                 index++;
             }
             l++;
             x++;
         }
+        if (str[l + 1] == '\n' || str[l + 1] == '\0')
+            tetri_add_w_copy(base_tetri, tetri);
         y++;
         l++;
         x = 1;
-    }//свернуть 4 блока в struct tetri | 3 уровня : пиксель->блок->тетримино
-    return (tetri);
+    }
+    return (base_tetri);
 }
 
 static int validate(char *str)
@@ -91,8 +72,9 @@ static int validate(char *str)
 			return (-1);
 		while (*str != '\n')
 		{
-			if (*str != '.' && *str != '#' /* && *str != '\n' && *str != '\0'*/) //не так должно быть
-				return (-1);
+			if (*str != '.' && *str != '#')
+			    if (*str != '\n' && i % 5 == 0)
+				    return (-1);
 			else if (*str == '#')
 			{
 				stack[k] = i;
@@ -110,8 +92,10 @@ static int validate(char *str)
 	k = 0;
 	while (k < 6) //??
 	{
-		if ((stack[k] == stack[k + 2] && stack[k + 1] - stack[k + 3] == 1 || -1) || //можно ли так
-		(stack[k + 1] == stack[k + 3] && stack[k] - stack[k + 2] == 1 || -1))
+		if ((stack[k] == stack[k + 2] && stack[k + 1] - stack[k + 3] == 1) || //можно ли так
+		(stack[k] == stack[k + 2] && stack[k + 1] - stack[k + 3] == -1) ||
+		(stack[k + 1] == stack[k + 3] && stack[k] - stack[k + 2] == 1) ||
+        (stack[k + 1] == stack[k + 3] && stack[k] - stack[k + 2] == -1))
 			k = k + 2;
 		else
 			return (-1);	
@@ -125,14 +109,23 @@ int		reading(int fd)
 	char	str[21];
 	tetri	*base_tetri;
 	tetri	*buf_tetri;
+	int i;
 
 	base_tetri = NULL;
-	while ((count = read(fd, str, 21)) >= 20)//читаем 21 символ т/к (..#.\n)5х4 (один блок) + еще один \n ?? Работает, собирает цепь из фигур корректно (вроде)
-	{
-		str[20] = '\0';
-		buf_tetri = detect_and_createtetri(str);
+	i = 0;
+	while ((count = read(fd, str, 546)) >= 20)//читаем 21 символ т/к (..#.\n)5х4 (один блок) + еще один \n ?? Работает, собирает цепь из фигур корректно (вроде)
+    {
+        str[count] = '\0';
+        if (main_validate(str, count) == -1)
+            return (-1);
+        buf_tetri = detect_and_createtetri(str);
+        while (buf_tetri->x[i])
+        {
+            printf("%d\n", buf_tetri->x[i]);
+            i++;
+        }
+        i = 0;
 		tetri_add_w_copy(&base_tetri, buf_tetri); //функция должна копить тетри в лист tetri_add_w_copy
-		validate; //неоч проверять блоки после создания
 		free(buf_tetri);
 	}
     return (1);

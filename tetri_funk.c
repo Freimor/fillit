@@ -6,22 +6,22 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 16:29:22 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/03 16:13:41 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/09 15:22:22 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-tetri	*tetri_new(block b1, block b2, block b3, block b4)
+tetri	*tetri_new()
 {
 	tetri	*new;
 
 	if (!(new = (tetri *)malloc(sizeof(tetri))))
-		return (NULL);
-	new->b1 = b1;
-	new->b2 = b2;
-	new->b3 = b3;
-	new->b4 = b4;
+	    return (NULL);
+	if (!(new->x = (int *)malloc(sizeof(int) * 4)))
+	    return (NULL);
+	if (!(new->y = (int *)malloc(sizeof(int) * 4)))
+	    return (NULL);
 	new->next = NULL;
 	return (new);
 }
@@ -63,18 +63,16 @@ void	tetri_add(tetri **base, tetri *new)
 
 void	tetri_add_w_copy(tetri **base, tetri *new)
 {
-    tetri   *copy;
+	tetri	*copy;
 
-    if (!(new))
-        return ;
-    if (!(copy = (tetri *)malloc(sizeof(tetri))))
-        return ;
-    copy->b1 = new->b1;
-    copy->b2 = new->b2;
-    copy->b3 = new->b3;
-    copy->b4 = new->b4;
-    copy->next = *base;
-    *base = copy;
+	if (!(new))
+		return ;
+	copy = tetri_new();
+	*copy->x = *new->x;
+	*copy->y = *new->y;
+	copy->next = *base;
+	*base = copy;
+	free(new);
 }
 
 /*tetri	*tetri_check(tetri **base, int index)

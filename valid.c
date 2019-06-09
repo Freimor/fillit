@@ -10,66 +10,85 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include "fillit.h"
+#include "fillit.h"
 #include <stdio.h>
 
-char	**analize(char *str)
+static int validate_1(char *str, int count)
 {
-	block   mass;
-	int		i;
-	int		j;
-	int     k;
-	int     l;
+    int i;
+    int k;
 
-	ptr = &s;
-	i = 0;
-	while (*str != '\0' && k != TETRI)
-	{
-	    j = 0;
-		if (*str != '\n' && l != 4)
-		{
-			if (*str == '#')
-			{
-                cube.x = i;
-                cube.y = j;
-                masse[k][l] = cube;
-                l++;
-            }
-			str++;
-			i++;
-		}
-		k++;
-		j++;
-		str++;
-		l = 0;
-		i = 0;
-	}
-	return (ptr);
+    k = 0;
+    while (k != 4)
+    {
+        while (str[i] != '\n')
+        {
+            if (*str != '.' && *str != '#')
+                if (*str != '\n' && i % 5 == 0)
+                    return (-1);
+        }
+    }
 }
 
-int main(void)
+static int validate(char *str)
 {
-	char	*str;
-    block	**w;
-    char    *tmp;
-	int		i;
-	int		ret;
-	int		fd;
-	char	buf[BUFF_SIZE + 1];
+    int	i;
+    int	j;
+    int	k;
+    int	stack[8]; //1 tetri = 8 coordinates
 
-	i = 0;
-	str = ft_strnew(1);
-	fd = open("/Users/sskinner/gitex/Fillit/tetri.txt", O_RDONLY);
-	while ((ret = read(fd, buf, BUFF_SIZE)) > 0)
-	{
-	    buf[ret] = '\0';
-	    tmp = ft_strjoin(str, buf);
-	    free(str);
-	    str = tmp;
-		i++;
-	}
-	w = analize(str);
-	i = 0;
+    i = 0;
+    j = 0;
+    k = 0;
+    while (*str != '\0')
+    {
+        if (i > 20) //??
+            return (-1);
+        while (*str != '\n')
+        {
+            if (*str != '.' && *str != '#')
+                if (*str != '\n' && i % 5 == 0)
+                    return (-1);
+                else if (*str == '#')
+                {
+                    stack[k] = i;
+                    stack[k++] = j;
+                    k++;
+                }
+            str++;
+            j++;
+        }
+        if (j != 4)
+            return (-1);
+        j = 0;
+        i = i + 4;
+    }
+    k = 0;
+    while (k < 6) //??
+    {
+        if ((stack[k] == stack[k + 2] && stack[k + 1] - stack[k + 3] == 1) ||
+            (stack[k] == stack[k + 2] && stack[k + 1] - stack[k + 3] == -1) ||
+            (stack[k + 1] == stack[k + 3] && stack[k] - stack[k + 2] == 1) ||
+            (stack[k + 1] == stack[k + 3] && stack[k] - stack[k + 2] == -1))
+            k = k + 2;
+        else
+            return (-1);
+    }
+    return (0);
+}
 
-	return (0);
-}*/
+int     main_validate(char *str, int count)
+{
+    char   *buf_str;
+    char   *tmp;
+
+    if (count % 21 != 0)
+        return (-1);
+    while (ft_strlen(str) < 21)
+    {
+        buf_str = ft_strcopyuntil(str, str + 21);
+        str = str + 21;
+        if (validate_1(buf_str, count) == -1)
+            return (-1);
+    }
+}
