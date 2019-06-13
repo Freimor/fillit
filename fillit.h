@@ -28,13 +28,18 @@ typedef struct		tetri
 {
 	int	*x;
 	int	*y;
-	struct tetri *next;
+	int index;
+	struct tetri *previous;
+    struct tetri *next;
 }					tetri;
 
 tetri	*tetri_new();
 int		tetri_del(tetri **base, tetri *del);
 void	tetri_add(tetri **base, tetri *new);
-void	tetri_add_w_copy(tetri **base, tetri *new);
+void	tetri_add_w_copy(tetri **base, tetri *new, int index);
+void   tetri_absolute(tetri **base);
 int     main_validate(char *str, int count);
+
+char    *strcut(char *str);
 
 #endif

@@ -22,11 +22,14 @@ tetri	*tetri_new()
 	    return (NULL);
 	if (!(new->y = (int *)malloc(sizeof(int) * 4)))
 	    return (NULL);
+    if (!(new->index = (int *)malloc(sizeof(int))))
+        return (NULL);
 	new->next = NULL;
+	new->previous = NULL;
 	return (new);
 }
 
-int		tetri_del(tetri **base, tetri *del)  //делой
+int		tetri_del(tetri **base, tetri *del)  //возможно понадобится простое удаление всех листов
 {
 	tetri	*ptr;
 	tetri	*buf;
@@ -59,9 +62,10 @@ void	tetri_add(tetri **base, tetri *new)
 		return ;
 	new->next = *base;
 	*base = new;
+    (*base)->previous = new;
 }
 
-void	tetri_add_w_copy(tetri **base, tetri *new)
+void	tetri_add_w_copy(tetri **base, tetri *new, int index)
 {
 	tetri	*copy;
 
@@ -70,21 +74,45 @@ void	tetri_add_w_copy(tetri **base, tetri *new)
 	copy = tetri_new();
 	*copy->x = *new->x;
 	*copy->y = *new->y;
+	copy->index = index;
 	copy->next = *base;
 	*base = copy;
+    (*base)->previous = copy;
 	free(new);
 }
 
-/*tetri	*tetri_check(tetri **base, int index)
+char    *strcut(char *str)
 {
-	block	*ptr;
+    char    *buf;
+    int     i;
 
-	ptr = *base;
-	while (ptr)
-	{
-		if (ptr->index == index)
-			return (ptr);
-		ptr = ptr->next;
-	}
-	return (0);
-}*/
+    i = 0;
+    while (*str != '\0')
+    {
+        str++;
+        i++;
+    }
+    buf = ft_strndup(str, i);
+    return (buf);
+}
+
+void   tetri_absolute(tetri **base)   //чекоть
+{
+    int dimention_x;
+    int dimention_y;
+    int i;
+
+    i = 0;
+    while ((*base)->next != NULL)
+    {
+        dimention_x = (*base)->x[0];
+        dimention_y = (*base)->y[0];
+        while (i != 8)
+        {
+            (*base)->x[i] = (*base)->x[i] - dimention_x;
+            (*base)->y[i] = (*base)->y[i] - dimention_y;
+            i++;
+        }
+        *base = (*base)->next;
+    }
+}
