@@ -212,5 +212,7 @@ CMakeFiles/Fillit.dir/tetri_funk.c.o: .././libft/libft.h
 CMakeFiles/Fillit.dir/tetri_funk.c.o: ../fillit.h
 CMakeFiles/Fillit.dir/tetri_funk.c.o: ../tetri_funk.c
 
+CMakeFiles/Fillit.dir/valid.c.o: .././libft/libft.h
+CMakeFiles/Fillit.dir/valid.c.o: ../fillit.h
 CMakeFiles/Fillit.dir/valid.c.o: ../valid.c
 

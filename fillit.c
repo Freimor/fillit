@@ -33,8 +33,8 @@ static tetri   *detect_and_createtetri(char *str)
 
     index = 0;
     l = 0;
-    x = 1;
-    y = 1;
+    x = 0;
+    y = 0;
     k = 0;
     tetri = NULL;
     while (str[l] != '\0')
@@ -49,11 +49,14 @@ static tetri   *detect_and_createtetri(char *str)
             l++;
             x++;
         }
-        if (str[l + 1] == '\n' || str[l + 1] == '\0')
-            tetri_add_w_copy(base_tetri, tetri, k++);
+        if (str[l + 1] == '\n' || str[l + 1] == '\0') \
+        {
+            tetri_add_w_copy(&base_tetri, tetri, k++);
+            l++;
+        }
         y++;
         l++;
-        x = 1;
+        x = 0;
     }
     return (base_tetri);
 }
@@ -71,16 +74,16 @@ int		reading(int fd)
 	while ((count = read(fd, str, 546)) >= 20)//читаем 21 символ т/к (..#.\n)5х4 (один блок) + еще один \n ?? Работает, собирает цепь из фигур корректно (вроде)
     {
         str[count] = '\0';
-        tmp = strcut(str);
-        if (main_validate(tmp, ft_strlen(tmp)) == -1)
+        //tmp = strcut(str);  //?
+        if (main_validate(str, ft_strlen(str) + 1) == -1)
             return (-1);
         base_tetri = detect_and_createtetri(str);
-        while (base_tetri->x[i])
+        /*while (base_tetri->x[i])
         {
             printf("%d\n", base_tetri->x[i]);
             i++;
         }
-        i = 0;
+        i = 0;*/
 		free(base_tetri);
 		free(tmp);
 	}

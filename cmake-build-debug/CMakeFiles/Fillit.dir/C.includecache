@@ -16,10 +16,6 @@ unistd.h
 stddef.h
 -
 
-/Users/sskinner/gitex/Fillit/fillit.c
-fillit.h
-/Users/sskinner/gitex/Fillit/fillit.h
-
 /Users/sskinner/gitex/Fillit/fillit.h
 fcntl.h
 -
@@ -35,4 +31,10 @@ stdlib.h
 -
 ./libft/libft.h
 /Users/sskinner/gitex/Fillit/./libft/libft.h
+
+/Users/sskinner/gitex/Fillit/valid.c
+fillit.h
+/Users/sskinner/gitex/Fillit/fillit.h
+stdio.h
+-
 
