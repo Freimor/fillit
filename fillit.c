@@ -37,7 +37,7 @@ static tetri   *detect_and_createtetri(char *str)
     y = 0;
     k = 0;
     tetri = NULL;
-    while (str[l] != '\0')
+    while (str[l] == '\0' && str[l - 1] == '\n')
     {
         while (str[l] != '\n')
         {
@@ -49,7 +49,7 @@ static tetri   *detect_and_createtetri(char *str)
             l++;
             x++;
         }
-        if (str[l + 1] == '\n' || str[l + 1] == '\0') \
+        if (str[l] == '\n' && str[l + 1] == '\n')
         {
             tetri_add_w_copy(&base_tetri, tetri, k++);
             l++;
