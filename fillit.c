@@ -6,95 +6,72 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 16:41:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/09 15:23:25 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/22 14:32:25 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-static tetri	*tetri_build(tetri **base, int index, int x, int y)
+static void tetri_build(t_fig **head,t_fig **tetri, int i, int x, int y)
 {
-	if (*base == NULL)
-	    *base = tetri_new();
-	(*base)->x[index] = x;
-	(*base)->y[index] = y;
-	return (*base);
+    if (*tetri == NULL)
+    {
+        *tetri = tetri_new();
+    }
+    (*tetri)->x_arr[i] = x;
+    (*tetri)->y_arr[i] = y;
+    if (i == 3)
+        tetri_add_w_copy(head, tetri);
 }
 
-static tetri   *detect_and_createtetri(char *str)
+
+t_fig   *detect_and_createtetri(char *str)
 {
     int		x;
     int		y;
-    int		index;
-    int		l;
-    int     k;
-    tetri   *base_tetri;
-    tetri	*tetri;
+    int		i;
+    t_fig   *head;
+    t_fig	*tetri;
 
-    index = 0;
-    l = 0;
-    x = 0;
+    i = 0;
     y = 0;
-    k = 0;
+    head = NULL;
     tetri = NULL;
-    while (str[l] == '\0' && str[l - 1] == '\n')
+    while (*str != '\n' && *(str + 1) != '\0')
     {
-        while (str[l] != '\n')
+        x = 0;
+        while (*str != '\n')
         {
-            if (str[l] == '#')
+            if (*str == '#')
             {
-                tetri_build(&tetri, index, x, y);
-                index++;
+                tetri_build(&head, &tetri, i, x, y);
+                i++;
             }
-            l++;
+            str++;
             x++;
         }
-        if (str[l] == '\n' && str[l + 1] == '\n')
+      /* if (*str == '\n' && *(str + 1) == '\n')
         {
-            tetri_add_w_copy(&base_tetri, tetri, k++);
-            l++;
-        }
+            tetri_add_w_copy(&head, tetri);
+            str++;
+        }*/
         y++;
-        l++;
-        x = 0;
+        str++;
     }
-    return (base_tetri);
+    return (head);
 }
 
-int		reading(int fd)
+char	*reading(int fd)
 {
 	int		count;
 	char	str[546];
 	char    *tmp;
-	tetri	*base_tetri;
-	int i;
 
-	base_tetri = NULL;
-	i = 0;
-	while ((count = read(fd, str, 546)) >= 20)//читаем 21 символ т/к (..#.\n)5х4 (один блок) + еще один \n ?? Работает, собирает цепь из фигур корректно (вроде)
+	while ((count = read(fd, str, 546)) >= 20)
     {
         str[count] = '\0';
-        //tmp = strcut(str);  //?
-        if (main_validate(str, ft_strlen(str) + 1) == -1)
-            return (-1);
-        base_tetri = detect_and_createtetri(str);
-        /*while (base_tetri->x[i])
-        {
-            printf("%d\n", base_tetri->x[i]);
-            i++;
-        }
-        i = 0;*/
-		free(base_tetri);
-		free(tmp);
+        tmp = strcut(str);
 	}
-    return (1);
+    return (tmp);
 }
 
-int main ()
-{
-	int fd;
-	
-	fd = open("/Users/sskinner/gitex/Fillit/tetri.txt", O_RDONLY);
-	reading(fd);
-	return (0);
-}

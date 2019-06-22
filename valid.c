@@ -156,7 +156,7 @@ int     main_validate(char *str, int count) //отправлять на вали
     int i;
 
     i = 0;
-    if (count % 21 != 0)
+    if (count % 21 != 0) //МЫ ЖЕ СЧИТАЛИ РОВНО 21 СИМВОЛ??
         return (-1);
     while (*str != '\0')
     {

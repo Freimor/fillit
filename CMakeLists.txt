@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
-project(Fillit C)
+project(Fillit_fin C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 include_directories(libft)
 
-add_executable(Fillit
+add_executable(Fillit_fin
         libft/ft_atoi.c
         libft/ft_bzero.c
         libft/ft_countwords_withnullstr.c
@@ -75,7 +75,7 @@ add_executable(Fillit
         libft/ft_toupper.c
         libft/ft_wordlen.c
         libft/libft.h
-        block_funk.c
+        algo.c
         fillit.c
         fillit.h
         tetri_funk.c
