@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 16:41:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/22 14:32:25 by bcharity         ###   ########.fr       */
+/*   Updated: 2019/06/23 14:17:55 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ static void tetri_build(t_fig **head,t_fig **tetri, int i, int x, int y)
     if (i == 3)
         tetri_add_w_copy(head, tetri);
 }
-
 
 t_fig   *detect_and_createtetri(char *str)
 {
@@ -50,11 +49,6 @@ t_fig   *detect_and_createtetri(char *str)
             str++;
             x++;
         }
-      /* if (*str == '\n' && *(str + 1) == '\n')
-        {
-            tetri_add_w_copy(&head, tetri);
-            str++;
-        }*/
         y++;
         str++;
     }
@@ -68,10 +62,7 @@ char	*reading(int fd)
 	char    *tmp;
 
 	while ((count = read(fd, str, 546)) >= 20)
-    {
-        str[count] = '\0';
         tmp = strcut(str);
-	}
-    return (tmp);
+    return (str);
 }
 

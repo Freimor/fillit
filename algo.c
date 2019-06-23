@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   valid.c                                            :+:      :+:    :+:   */
+/*   algo.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:49:59 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/22 10:26:51 by bcharity         ###   ########.fr       */
+/*   Updated: 2019/06/23 17:09:20 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,32 +18,31 @@ int check_avail(int *x,int *y, int dx,int dy, char **map)
     int i;
     int nx;
     int ny;
-   // int j = 0;
-    
-        i = 0;
-        while(i < 4)
+	
+	i = 0;
+    while(i < 4)
+    {
+		nx = x[i] + dx;
+        ny = y[i] + dy;
+        printf("nx = %d___ny = %d\n", nx,ny);
+        printf("map= %c\n",map[ny][nx]);
+        if(map[ny][nx] == '.')
         {
-           nx = x[i]+dx;
-           ny = y[i]+dy;
-           printf("nx = %d___ny = %d\n", nx,ny);
-           printf("map= %c\n",map[ny][nx]);
-           if(map[ny][nx] == '.')
-            {
-               printf("check_%c\n",map[ny][nx]);
-                i++;
-            }
-            else
-                return(0);
+//			printf("check_%c\n",map[ny][nx]);
+            i++;
         }
+		else
+			return(0);
+    }
         return (1);
 }
 
-void    to_map(t_fig *list, int dx, int dy, char **map)
+void	to_map(t_fig *list, int dx, int dy, char **map)
 {
-    int *x;
-    int *y;
-    int i;
-    char c;
+    int		*x;
+    int		*y;
+    int		i;
+    char	c;
 
     i = 0;
     x = list->x_arr;
@@ -58,7 +57,7 @@ void    to_map(t_fig *list, int dx, int dy, char **map)
     }
 }
 
-void    clear(t_fig *list, int dx, int dy, char **map)
+void	clear(t_fig *list, int dx, int dy, char **map)
 {
     int *x;
     int *y;
@@ -79,45 +78,37 @@ void    clear(t_fig *list, int dx, int dy, char **map)
 
 }
 
- int fill_map(int a, t_fig *list, char **map)
+int		fill_map(int a, t_fig *list, char **map)
 {
     int dx;
     int dy;
     int *x;
     int *y;
 
-    int j = 0;
-        x = list->x_arr;
-        y = list->y_arr;
-        dy = 0;
-        while (dy < a)
-         {
-            dx = 0;
-            while (dx < a)
+    x = list->x_arr;
+    y = list->y_arr;
+    dy = 0;
+    while (dy < a)
+    {
+		dx = 0;
+        while (dx < a)
+        {
+			if (check_avail(x,y,dx,dy,map))
             {
-                 if (check_avail(x,y,dx,dy,map))// проверка, все ли места карты, соответствующие данному смещению и координатам фигуры свободны
-                 {
-                     printf("DX_1=%d__DY_1=%d\n", dx,dy);
-                     to_map(list, dx, dy,map);
-                     printf("OK\n");
-                     if(list->next == NULL || fill_map (a, list->next, map))
-                     {
-                         return (1);
-                     }
-
-                 }
-                   // printf("DX_2=%d__DY_2=%d\n", dx,dy);
-                    dx++;
-            }
-            dy++ ;
-         }// найти место для фигуры не удалось
-     if (list->index == 1)
-         return(-1);//    просто очистить и увеличить карту      fill_map(a++, fig, map));
-     else
-         return(0);//  переставить предыдущий элемент     fill_map(a, fig->prev, char *map))
-
+//				printf("DX_1=%d__DY_1=%d\n", dx,dy);
+                to_map(list, dx, dy,map);
+//              printf("OK\n");
+                if(list->next == NULL || fill_map(a, list->next, map))
+					return (1);
+			}
+			dx++;
+		}
+        dy++ ;
+    }// найти место для фигуры не удалось
+     if (list->index == 0)
+         return (-1);// fill_map(a++, fig, map));
+	return (0);
 }
-
 
 static int     min_edge(t_fig *list)
 {
@@ -125,8 +116,11 @@ static int     min_edge(t_fig *list)
     int n;
 
     n = 0;
-    while(list->next)
+    while(list)
+    {
         n++;
+        list = list->next;
+    }
     printf("n = %d\n",n);
     a = 0;
     while (a * a < 4*n)
@@ -138,28 +132,30 @@ static int     min_edge(t_fig *list)
 
 char **zero_map(int a)
 {
-    int i;
-    int j;
-    char    **map;
+    int		i;
+    int		j;
+    char	**map;
 
-     j = 0;
-    map = (char**)malloc((a+1)*sizeof(char*));
-   
-    while(j < a+1)
-    {
-        map[j] = (char*)malloc((a+1)*sizeof(char));
-        j++;
-    }
-
-         j = 0;
+   j = 0;
+//	map = ft_memalloc((a+1)*sizeof(char*));
+   if(!(map = (char**)malloc((a+1)*sizeof(char*))))
+	   return(NULL);
+   while(j < a+1)
+   {
+	   map[j] = ft_memalloc((a+1)*sizeof(char));
+       // map[j] = (char*)malloc((a+1)*sizeof(char));
+       j++;
+	}
+    j = 0;
     while(j < a)
     {
-        i = 0;
+       /* i = 0;
         while(i < a)
         {
             map[i][j] = '.';
             i++;
-        }
+        }*/
+		map[j] = ft_memset(map[j], '.', a);
         map[a][j] = '\0';
         j++;
     }
@@ -181,16 +177,12 @@ char *free_map(char **map)
     return(NULL);
 }
 
- char **create_map (t_fig *list,int a)
+char**create_map (t_fig *list,int a)
 {
     char **map;
     int f;
-    int j = 0;
-
+	
     map = zero_map(a);
-
-
-
     f = fill_map(a, list, map);
     if (f == 1)
         return (map);
@@ -217,25 +209,34 @@ void    print_map(char **map)
       }
 }
 
-int main()
+int main(int ac, char **av)
 {
     t_fig *list;
     char **map;
     char *str;
-    int a;
     int fd;
-    
-	fd = open("/Users/sskinner/gitex/Fillit_fin/tetri.txt", O_RDONLY);
+    int a;
+
+	
+	// printf("a = %d\n",a);
+	if (ac != 2)
+	{
+		ft_putendl("usage [map]");
+		return (0);
+	}
+	fd = open(av[1], O_RDONLY);
     str = reading(fd);
     if (main_validate(str, ft_strlen(str) + 1) == -1)
+	{
+		ft_putendl("error");
         return (-1);
+	}
+	close(fd);
     list = detect_and_createtetri(str);
-    tetri_absolute(&list);
-    // printf("n = %d\n",n);
-    a = min_edge(list);
-    // printf("a = %d\n",a);
-    map = create_map(list, a);
-    print_map(map);
+	tetri_absolute(&list);
+	a = min_edge(list);
+    map = create_map(list,a);
+	print_map(map);
     free_map(map);
     tetri_del(&list);
 }

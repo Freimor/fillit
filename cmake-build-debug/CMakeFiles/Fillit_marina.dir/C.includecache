@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sskinner/gitex/Fillit_marina/./libft/libft.h
+string.h
+-
+stdlib.h
+-
+unistd.h
+-
+stddef.h
+-
+
+/Users/sskinner/gitex/Fillit_marina/fillit.h
+fcntl.h
+-
+stdio.h
+-
+sys/types.h
+-
+sys/uio.h
+-
+unistd.h
+-
+stdlib.h
+-
+./libft/libft.h
+/Users/sskinner/gitex/Fillit_marina/./libft/libft.h
+
+/Users/sskinner/gitex/Fillit_marina/tetri_funk.c
+fillit.h
+/Users/sskinner/gitex/Fillit_marina/fillit.h
+

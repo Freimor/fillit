@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
-project(Fillit_fin C)
+project(Fillit_marina C)
 
 set(CMAKE_C_STANDARD 11)
 
 include_directories(.)
 include_directories(libft)
 
-add_executable(Fillit_fin
+add_executable(Fillit_marina
         libft/ft_atoi.c
         libft/ft_bzero.c
         libft/ft_countwords_withnullstr.c
