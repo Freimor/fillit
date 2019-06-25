@@ -96,9 +96,22 @@ CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sskinner/gitex/Fillit_marina/libft/ft_countwords_withnullstr.c -o CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.s
 
+CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o: CMakeFiles/Fillit_marina.dir/flags.make
+CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o: ../libft/ft_freemem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_freemem.c
+
+CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sskinner/gitex/Fillit_marina/libft/ft_freemem.c > CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.i
+
+CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sskinner/gitex/Fillit_marina/libft/ft_freemem.c -o CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.s
+
 CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o: ../libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_isalnum.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_isalpha.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o: ../libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_isascii.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_isdigit.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_isdigit.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_isprint.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_isprint.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_itoa.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_itoa.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstadd.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstadd.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.o: ../libft/ft_lstcheck_contentsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstcheck_contentsize.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstcheck_contentsize.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.o: ../libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstdel.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstdel.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.o: ../libft/ft_lstdel_contentsize.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstdel_contentsize.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstdel_contentsize.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.o: ../libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstdelone.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstdelone.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.o: ../libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstiter.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.i: cmake_force
@@ -254,7 +267,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstiter.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.o: ../libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstmap.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.i: cmake_force
@@ -267,7 +280,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstmap.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_lstnew.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.i: cmake_force
@@ -280,7 +293,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_lstnew.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memalloc.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.i: cmake_force
@@ -293,7 +306,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memalloc.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.o: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memccpy.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.i: cmake_force
@@ -306,7 +319,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memccpy.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memchr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.i: cmake_force
@@ -319,7 +332,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memchr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memcmp.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memcmp.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memcpy.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.i: cmake_force
@@ -345,7 +358,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memcpy.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.o: ../libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memdel.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.i: cmake_force
@@ -358,7 +371,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memdel.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.o: ../libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memmove.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.i: cmake_force
@@ -371,7 +384,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memmove.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_memset.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.i: cmake_force
@@ -384,7 +397,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_memset.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putchar.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.i: cmake_force
@@ -397,7 +410,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putchar.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putchar_fd.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.i: cmake_force
@@ -410,7 +423,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putchar_fd.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.o: ../libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putendl.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.i: cmake_force
@@ -423,7 +436,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putendl.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putendl_fd.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.i: cmake_force
@@ -436,7 +449,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putendl_fd.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putnbr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.i: cmake_force
@@ -449,7 +462,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putnbr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putnbr_fd.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.i: cmake_force
@@ -462,7 +475,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putnbr_fd.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putstr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.i: cmake_force
@@ -475,7 +488,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putstr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_putstr_fd.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.i: cmake_force
@@ -488,7 +501,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_putstr_fd.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.o: ../libft/ft_str2del.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_str2del.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.i: cmake_force
@@ -501,7 +514,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_str2del.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strcat.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.i: cmake_force
@@ -514,7 +527,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strcat.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strchr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.i: cmake_force
@@ -527,7 +540,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strchr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.o: ../libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strclr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.i: cmake_force
@@ -540,7 +553,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strclr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strcmp.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.i: cmake_force
@@ -553,7 +566,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strcmp.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.o: ../libft/ft_strcopyuntil.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strcopyuntil.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.i: cmake_force
@@ -566,7 +579,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strcopyuntil.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strcpy.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.i: cmake_force
@@ -579,7 +592,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strcpy.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strdel.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.i: cmake_force
@@ -592,7 +605,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strdel.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strdup.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.i: cmake_force
@@ -605,7 +618,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strdup.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strequ.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.i: cmake_force
@@ -618,7 +631,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strequ.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.o: ../libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_striter.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.i: cmake_force
@@ -631,7 +644,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_striter.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.o: ../libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_striteri.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.i: cmake_force
@@ -644,7 +657,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_striteri.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strjoin.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.i: cmake_force
@@ -657,7 +670,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strjoin.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.o: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strlcat.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.i: cmake_force
@@ -670,7 +683,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strlcat.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strlen.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.i: cmake_force
@@ -683,7 +696,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strlen.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.o: ../libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strmap.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.i: cmake_force
@@ -696,7 +709,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strmap.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.o: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strmapi.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.i: cmake_force
@@ -709,7 +722,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strmapi.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strncat.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.i: cmake_force
@@ -722,7 +735,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strncat.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strncmp.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.i: cmake_force
@@ -735,7 +748,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strncmp.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.o: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strncpy.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.i: cmake_force
@@ -748,7 +761,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strncpy.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.o: ../libft/ft_strnd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strnd.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.i: cmake_force
@@ -761,7 +774,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strnd.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.o: ../libft/ft_strndup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strndup.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.i: cmake_force
@@ -774,7 +787,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strndup.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.o: ../libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strnequ.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.i: cmake_force
@@ -787,7 +800,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strnequ.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strnew.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.i: cmake_force
@@ -800,7 +813,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strnew.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.o: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strnstr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.i: cmake_force
@@ -813,7 +826,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strnstr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.o: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strrchr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.i: cmake_force
@@ -826,7 +839,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strrchr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.o: ../libft/ft_strreverse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strreverse.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.i: cmake_force
@@ -839,7 +852,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strreverse.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strsplit.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.i: cmake_force
@@ -852,7 +865,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strsplit.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strstr.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.i: cmake_force
@@ -865,7 +878,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strstr.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strsub.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.i: cmake_force
@@ -878,7 +891,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strsub.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_strtrim.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.i: cmake_force
@@ -891,7 +904,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_strtrim.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_tolower.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.i: cmake_force
@@ -904,7 +917,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_tolower.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_toupper.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.i: cmake_force
@@ -917,7 +930,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_toupper.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.o: ../libft/ft_wordlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.o   -c /Users/sskinner/gitex/Fillit_marina/libft/ft_wordlen.c
 
 CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.i: cmake_force
@@ -930,7 +943,7 @@ CMakeFiles/Fillit_marina.dir/libft/ft_wordlen.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/algo.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/algo.c.o: ../algo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/Fillit_marina.dir/algo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Fillit_marina.dir/algo.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/algo.c.o   -c /Users/sskinner/gitex/Fillit_marina/algo.c
 
 CMakeFiles/Fillit_marina.dir/algo.c.i: cmake_force
@@ -943,7 +956,7 @@ CMakeFiles/Fillit_marina.dir/algo.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/fillit.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/fillit.c.o: ../fillit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/Fillit_marina.dir/fillit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Fillit_marina.dir/fillit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/fillit.c.o   -c /Users/sskinner/gitex/Fillit_marina/fillit.c
 
 CMakeFiles/Fillit_marina.dir/fillit.c.i: cmake_force
@@ -956,7 +969,7 @@ CMakeFiles/Fillit_marina.dir/fillit.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/tetri_funk.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/tetri_funk.c.o: ../tetri_funk.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/Fillit_marina.dir/tetri_funk.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Fillit_marina.dir/tetri_funk.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/tetri_funk.c.o   -c /Users/sskinner/gitex/Fillit_marina/tetri_funk.c
 
 CMakeFiles/Fillit_marina.dir/tetri_funk.c.i: cmake_force
@@ -969,7 +982,7 @@ CMakeFiles/Fillit_marina.dir/tetri_funk.c.s: cmake_force
 
 CMakeFiles/Fillit_marina.dir/valid.c.o: CMakeFiles/Fillit_marina.dir/flags.make
 CMakeFiles/Fillit_marina.dir/valid.c.o: ../valid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/Fillit_marina.dir/valid.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/Fillit_marina.dir/valid.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fillit_marina.dir/valid.c.o   -c /Users/sskinner/gitex/Fillit_marina/valid.c
 
 CMakeFiles/Fillit_marina.dir/valid.c.i: cmake_force
@@ -985,6 +998,7 @@ Fillit_marina_OBJECTS = \
 "CMakeFiles/Fillit_marina.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/Fillit_marina.dir/libft/ft_bzero.c.o" \
 "CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.o" \
+"CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o" \
 "CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o" \
 "CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o" \
 "CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o" \
@@ -1060,6 +1074,7 @@ Fillit_marina_EXTERNAL_OBJECTS =
 Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_atoi.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_bzero.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.o
+Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o
@@ -1130,7 +1145,7 @@ Fillit_marina: CMakeFiles/Fillit_marina.dir/tetri_funk.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/valid.c.o
 Fillit_marina: CMakeFiles/Fillit_marina.dir/build.make
 Fillit_marina: CMakeFiles/Fillit_marina.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Linking C executable Fillit_marina"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking C executable Fillit_marina"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fillit_marina.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

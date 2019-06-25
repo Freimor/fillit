@@ -3,44 +3,36 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sskinner <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bcharity <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/22 13:28:21 by sskinner          #+#    #+#             */
-/*   Updated: 2019/01/22 13:28:23 by sskinner         ###   ########.fr       */
+/*   Created: 2019/04/22 12:27:48 by bcharity          #+#    #+#             */
+/*   Updated: 2019/05/01 11:12:50 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_strjunk(int c)
+char	*ft_strtrim(char const *s)
 {
-	return (c == ' '
-	|| c == '\t'
-	|| c == '\n'
-	|| c == ',');
-}
-
-char		*ft_strtrim(char const *s)
-{
+	char	*trim;
+	size_t	i;
 	size_t	start;
-	size_t	end;
-	char	*new;
+	size_t	stop;
 
+	i = 0;
+	start = 0;
 	if (!s)
 		return (NULL);
-	start = 0;
-	end = ft_strlen(s);
-	while (ft_strjunk(s[start]))
+	stop = ft_strlen(s) - 1;
+	while (s[start] == ' ' || s[start] == '\t' || s[start] == '\n')
 		start++;
-	while (ft_strjunk(s[end - 1]))
-		end--;
-	if (end < start)
-		end = start;
-	if (!(new = ft_strnew(end - start)))
-		return (NULL);
-	if (end == start)
-		return (new);
-	if (ft_strncpy(new, &(s[start]), end - start))
-		new[end - start] = '\0';
-	return (new);
+	if (s[start] == '\0')
+	{
+		trim = ft_strsub(s, start, 1);
+		return (trim);
+	}
+	while (s[stop] == ' ' || s[stop] == '\t' || s[stop] == '\n')
+		stop--;
+	trim = ft_strsub(s, start, (stop - start + 1));
+	return (trim);
 }

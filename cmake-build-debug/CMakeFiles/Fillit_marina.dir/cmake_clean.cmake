@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Fillit_marina.dir/libft/ft_atoi.c.o"
   "CMakeFiles/Fillit_marina.dir/libft/ft_bzero.c.o"
   "CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.o"
+  "CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o"
   "CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o"
   "CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o"
   "CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o"

@@ -20,19 +20,19 @@ int check_avail(int *x,int *y, int dx,int dy, char **map)
     int ny;
 	
 	i = 0;
-    while(i < 4)
+	while(i < 4)
     {
 		nx = x[i] + dx;
         ny = y[i] + dy;
         printf("nx = %d___ny = %d\n", nx,ny);
-        printf("map= %c\n",map[ny][nx]);
+        //printf("map= %c\n",map[ny][nx]);
         if(map[ny][nx] == '.')
         {
-//			printf("check_%c\n",map[ny][nx]);
+			printf("check_%c\n",map[ny][nx]);
             i++;
         }
-		else
-			return(0);
+        else if (map[ny][nx] != '.')
+            return(0);
     }
         return (1);
 }
@@ -87,17 +87,27 @@ int		fill_map(int a, t_fig *list, char **map)
 
     x = list->x_arr;
     y = list->y_arr;
+
+  /*  printf("list->index= %d\n",list->index);
+    for(int j = 0; j < 4; j++)
+    {
+        printf("list->x[%d]_%d\n",j,list->x_arr[j]);
+        printf("list->y[%d]_%d\n",j,list->y_arr[j]);
+
+    }*/
+
     dy = 0;
     while (dy < a)
     {
 		dx = 0;
         while (dx < a)
         {
+            printf("dx = %d, dy = %d\n",dx,dy);
 			if (check_avail(x,y,dx,dy,map))
             {
-//				printf("DX_1=%d__DY_1=%d\n", dx,dy);
+				printf("DX_1=%d__DY_1=%d\n", dx,dy);
                 to_map(list, dx, dy,map);
-//              printf("OK\n");
+                printf("OK\n");
                 if(list->next == NULL || fill_map(a, list->next, map))
 					return (1);
 			}
@@ -177,7 +187,7 @@ char *free_map(char **map)
     return(NULL);
 }
 
-char**create_map (t_fig *list,int a)
+char    **create_map (t_fig *list,int a)
 {
     char **map;
     int f;
@@ -212,13 +222,12 @@ void    print_map(char **map)
 int main(int ac, char **av)
 {
     t_fig *list;
+    t_fig *iterate;
     char **map;
     char *str;
     int fd;
     int a;
 
-	
-	// printf("a = %d\n",a);
 	if (ac != 2)
 	{
 		ft_putendl("usage [map]");
@@ -226,14 +235,45 @@ int main(int ac, char **av)
 	}
 	fd = open(av[1], O_RDONLY);
     str = reading(fd);
-    if (main_validate(str, ft_strlen(str) + 1) == -1)
+    if ((list = main_validate(str, ft_strlen(str) + 1)) == NULL)
 	{
 		ft_putendl("error");
         return (-1);
 	}
 	close(fd);
-    list = detect_and_createtetri(str);
-	tetri_absolute(&list);
+    iterate = list;
+    printf("-----Before absolute-----\n");
+    while(iterate !=  NULL)
+    {
+        printf("Figurine --> %d\n", iterate->index);
+        for (int j = 0; j < 4; j++)
+        {
+            printf("x[%d] = %d", j, iterate->x_arr[j]);
+            printf(" || y[%d] = %d\n", j, iterate->y_arr[j]);
+
+        }
+        iterate = iterate->next;
+    }
+    printf("-------------------------\n");
+
+   	tetri_absolute(&list);
+
+    iterate = list;
+
+    printf("+++++After absolute++++++\n");
+    while(iterate !=  NULL)
+   	{
+        printf("Figurine --> %d\n", iterate->index);
+        for (int j = 0; j < 4; j++)
+        {
+            printf("x[%d] = %d", j, iterate->x_arr[j]);
+            printf(" || y[%d] = %d\n", j, iterate->y_arr[j]);
+
+        }
+        iterate = iterate->next;
+    }
+    printf("+++++++++++++++++++++++++\n");
+
 	a = min_edge(list);
     map = create_map(list,a);
 	print_map(map);

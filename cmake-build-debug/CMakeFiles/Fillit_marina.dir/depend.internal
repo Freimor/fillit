@@ -18,6 +18,9 @@ CMakeFiles/Fillit_marina.dir/libft/ft_bzero.c.o
 CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.o
  /Users/sskinner/gitex/Fillit_marina/libft/ft_countwords_withnullstr.c
  /Users/sskinner/gitex/Fillit_marina/libft/libft.h
+CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o
+ /Users/sskinner/gitex/Fillit_marina/libft/ft_freemem.c
+ /Users/sskinner/gitex/Fillit_marina/libft/libft.h
 CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o
  /Users/sskinner/gitex/Fillit_marina/libft/ft_isalnum.c
  /Users/sskinner/gitex/Fillit_marina/libft/libft.h

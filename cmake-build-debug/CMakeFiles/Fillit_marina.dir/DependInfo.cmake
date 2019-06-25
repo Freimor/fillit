@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/sskinner/gitex/Fillit_marina/libft/ft_atoi.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_atoi.c.o"
   "/Users/sskinner/gitex/Fillit_marina/libft/ft_bzero.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_bzero.c.o"
   "/Users/sskinner/gitex/Fillit_marina/libft/ft_countwords_withnullstr.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.o"
+  "/Users/sskinner/gitex/Fillit_marina/libft/ft_freemem.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o"
   "/Users/sskinner/gitex/Fillit_marina/libft/ft_isalnum.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_isalnum.c.o"
   "/Users/sskinner/gitex/Fillit_marina/libft/ft_isalpha.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_isalpha.c.o"
   "/Users/sskinner/gitex/Fillit_marina/libft/ft_isascii.c" "/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir/libft/ft_isascii.c.o"

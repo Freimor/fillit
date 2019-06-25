@@ -3,92 +3,73 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sskinner <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: bcharity <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/23 15:07:55 by sskinner          #+#    #+#             */
-/*   Updated: 2019/01/23 15:07:57 by sskinner         ###   ########.fr       */
+/*   Created: 2019/04/27 14:41:32 by bcharity          #+#    #+#             */
+/*   Updated: 2019/05/01 11:50:27 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	int		countiforstr(int num)
+static int			count(int n)
 {
-	int count;
+	int	num;
 
-	count = 0;
-	if ((num < -2147483648) || (num > 2147483647))
-		return (0);
-	if (num == 0)
-		count++;
-	if (num == -2147483648)
+	num = 0;
+	if (n < 0)
 	{
-		count++;
-		num /= 10;
+		num++;
+		n = -n;
 	}
-	if (num < 0)
+	if (n == 0)
+		num = 1;
+	while (n != 0)
 	{
-		num *= -1;
-		count++;
+		num++;
+		n /= 10;
 	}
-	while (num >= 1)
-	{
-		num /= 10;
-		count++;
-	}
-	return (count);
+	return (num);
 }
 
-static	char	*chartostr(char *a, size_t len)
+static char			*to_str(int n, int num, short ui)
 {
 	int		i;
-	char	*str;
+	char	*s;
 
 	i = 0;
-	str = ft_strnew(len);
-	while (a[i])
+	s = ft_strnew((num) * sizeof(char));
+	if (s)
 	{
-		str[i] = a[i];
-		i++;
+		while (i < num)
+		{
+			s[num - i - 1] = n % 10 + 48;
+			n = n / 10;
+			i++;
+		}
+		if (s[0] == '0' && s[1])
+			s[0] = '-';
+		if (ui)
+			s[1] = '2';
 	}
-	return (str);
+	return (s);
 }
 
-static	char	*writestrnorm(char *str, int num, int flag)
+char				*ft_itoa(int n)
 {
-	int		i;
+	int				num;
+	short			ui;
 
-	i = 0;
-	while (num != 0)
+	ui = 0;
+	num = count(n);
+	if (n < 0)
 	{
-		str[i] = "0123456789"[num % 10];
-		num /= 10;
-		i++;
+		n = -n;
 	}
-	if (flag == 1)
-		str[i] = '-';
-	return (str);
-}
-
-char			*ft_itoa(int num)
-{
-	char	*str;
-	int		flag;
-	int		i;
-
-	i = 0;
-	flag = 0;
-	if (!(str = ft_strnew(countiforstr(num))))
-		return (NULL);
-	if (num == 0)
-		str[i] = '0';
-	if (num == -2147483648)
-		return (chartostr("-2147483648", countiforstr(-2147483648)));
-	if (num < 0)
+	if (n == -2147483648)
 	{
-		flag = 1;
-		num *= -1;
+		n = 147483648;
+		ui = 1;
 	}
-	str = writestrnorm(str, num, flag);
-	return (ft_strreverse(str));
+	return (to_str(n, num, ui));
 }

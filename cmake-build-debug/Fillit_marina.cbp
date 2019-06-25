@@ -104,6 +104,9 @@
 		<Unit filename="/Users/sskinner/gitex/Fillit_marina/libft/ft_countwords_withnullstr.c">
 			<Option target="Fillit_marina"/>
 		</Unit>
+		<Unit filename="/Users/sskinner/gitex/Fillit_marina/libft/ft_freemem.c">
+			<Option target="Fillit_marina"/>
+		</Unit>
 		<Unit filename="/Users/sskinner/gitex/Fillit_marina/libft/ft_isalnum.c">
 			<Option target="Fillit_marina"/>
 		</Unit>
@@ -299,10 +302,19 @@
 		<Unit filename="/Users/sskinner/gitex/Fillit_marina/libft/libft.h">
 			<Option target="Fillit_marina"/>
 		</Unit>
+		<Unit filename="/Users/sskinner/gitex/Fillit_marina/tetri.txt">
+			<Option target="Fillit_marina"/>
+		</Unit>
 		<Unit filename="/Users/sskinner/gitex/Fillit_marina/tetri_funk.c">
 			<Option target="Fillit_marina"/>
 		</Unit>
 		<Unit filename="/Users/sskinner/gitex/Fillit_marina/valid.c">
+			<Option target="Fillit_marina"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/Fillit_marina/valid_4t.txt">
+			<Option target="Fillit_marina"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/Fillit_marina/wrong.txt">
 			<Option target="Fillit_marina"/>
 		</Unit>
 		<Unit filename="/Users/sskinner/gitex/Fillit_marina/CMakeLists.txt">

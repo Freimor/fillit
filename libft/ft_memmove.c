@@ -3,37 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bcharity <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/14 13:39:15 by sskinner          #+#    #+#             */
-/*   Updated: 2019/04/17 14:50:42 by sskinner         ###   ########.fr       */
+/*   Created: 2019/04/15 15:56:25 by bcharity          #+#    #+#             */
+/*   Updated: 2019/04/20 17:04:10 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t n)
 {
-	size_t			i;
+	unsigned char		*d;
+	unsigned char		*s;
+	unsigned char		*lasts;
+	unsigned char		*lastd;
 
-	i = 0;
-	if (!(dst) && !(src))
-		return (NULL);
-	if (dst < src)
-	{
-		while (i < len)
-		{
-			*(char *)(dst + i) = *(char *)(src + i);
-			i++;
-		}
-	}
+	d = (unsigned char *)dst;
+	s = (unsigned char *)src;
+	if (d < s)
+		while (n--)
+			*d++ = *s++;
 	else
 	{
-		while (len > 0)
-		{
-			*(char *)(dst + len - 1) = *(char *)(src + len - 1);
-			len--;
-		}
+		lasts = s + (n - 1);
+		lastd = d + (n - 1);
+		while (n--)
+			*lastd-- = *lasts--;
 	}
 	return (dst);
 }

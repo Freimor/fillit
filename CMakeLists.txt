@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(Fillit_marina C)
+project(Fillit_marina)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 include_directories(libft)
@@ -10,6 +10,7 @@ add_executable(Fillit_marina
         libft/ft_atoi.c
         libft/ft_bzero.c
         libft/ft_countwords_withnullstr.c
+        libft/ft_freemem.c
         libft/ft_isalnum.c
         libft/ft_isalpha.c
         libft/ft_isascii.c
@@ -78,5 +79,8 @@ add_executable(Fillit_marina
         algo.c
         fillit.c
         fillit.h
+        tetri.txt
         tetri_funk.c
-        valid.c)
+        valid.c
+        valid_4t.txt
+        wrong.txt)

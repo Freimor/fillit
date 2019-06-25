@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bcharity <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/22 13:11:55 by sskinner          #+#    #+#             */
-/*   Updated: 2019/04/17 15:28:33 by sskinner         ###   ########.fr       */
+/*   Created: 2019/04/22 11:46:08 by bcharity          #+#    #+#             */
+/*   Updated: 2019/05/08 18:32:53 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,25 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*s12;
-	char	*fs12;
+	char	*join;
+	size_t	i;
 
-	if (!(s1) || !(s2))
+	i = 0;
+	if (!s1 || !s2)
 		return (NULL);
-	if (!(s12 = ft_strnew(ft_strlen(s1) + ft_strlen(s2) + 1)))
+	join = (char*)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!join)
 		return (NULL);
-	fs12 = s12;
-	while (*s1 != '\0')
+	while (s1[i] != '\0')
 	{
-		*s12 = *s1;
-		s1++;
-		s12++;
+		join[i] = s1[i];
+		i++;
 	}
 	while (*s2 != '\0')
 	{
-		*s12 = *s2;
-		s2++;
-		s12++;
+		join[i] = *s2++;
+		i++;
 	}
-	*s12 = '\0';
-	return (fs12);
+	join[i] = '\0';
+	return (join);
 }

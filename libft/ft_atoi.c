@@ -3,38 +3,55 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bcharity <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/16 17:10:53 by sskinner          #+#    #+#             */
-/*   Updated: 2019/04/17 18:22:38 by sskinner         ###   ########.fr       */
+/*   Created: 2019/04/20 10:53:25 by bcharity          #+#    #+#             */
+/*   Updated: 2019/04/29 13:34:36 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+static int	check_valid(const char *str, int n)
 {
-	int					flag;
-	size_t				i;
-	long int			s;
-	long int			temp;
+	int i;
 
-	flag = 1;
 	i = 0;
-	s = 0;
-	while ((str[i] == '\n') || (str[i] == '\t') || (str[i] == '\v') ||
-			(str[i] == ' ') || (str[i] == '\f') || (str[i] == '\r'))
-		i++;
-	if (str[i] == '-' || str[i] == '+')
-		flag = str[i++] == '-' ? (-1) : (1);
-	while (str[i] >= '0' && str[i] <= '9' && str[i] != '\0')
+	while (*str >= 48 && *str <= 57)
 	{
-		temp = s;
-		s *= 10;
-		s += str[i] - '0';
-		if (temp > s)
-			return (flag == 1) ? (-1) : (0);
 		i++;
+		str++;
 	}
-	return (flag * s);
+	if (i > 18 && n == 1)
+		return (-1);
+	if (i > 18 && n == -1)
+		return (0);
+	return (1);
+}
+
+int			ft_atoi(const char *str)
+{
+	int				n;
+	long long int	val;
+
+	val = 0;
+	n = 1;
+	while (*str == 32 || (*str >= 9 && *str <= 13))
+	{
+		str++;
+	}
+	if (*str == '-' || *str == '+')
+	{
+		if (*str == '-')
+			n = -1;
+		str++;
+	}
+	if (check_valid(str, n) <= 0)
+		return (check_valid(str, n));
+	while (*str >= 48 && *str <= 57)
+	{
+		val = 10 * val + (*str - 48);
+		str++;
+	}
+	return (n * (int)val);
 }

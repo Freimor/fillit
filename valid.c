@@ -15,164 +15,175 @@
 
 static int validate_1(char *str)
 {
-    int i;
     int k;
 
     k = 0;
-    i = 0;
-    while (!(str[i] == '\0' && str[i - 1] == '\n') &&
-    !(str[i] == '\n' && str[i - 1] == '\n'))
+    while (!(*str == '\0' && *(str - 1) == '\n') &&
+    !(*str == '\n' && *(str - 1) == '\n'))
     {
-        k++;
-        while (str[i] != '\n')
+        if (*str == '.' || *str == '\n')//НЕ(А+В)=НЕ(А)*НЕ(В)
+            str++;
+        if (*(str) == '#')
         {
-            if (*str != '.' && *str != '#')
-            {
-                if (*str != '\n' && i % 5 == 0)
-                    return (-1);
-            }
-            i++;
+            k++;
+            str++;
         }
-        i++;
+        if(*str != '.' && *str != '\n' && *str != '#' && *str != '\0' )
+            return (-1);
     }
+    printf("k(valid1) = %d\n ",k);
     return (k == 4) ? (1) : (-1);
 }
 
-static  int getvid(int *stack, int i)
+static int     func_flag(const int vis[8],int *stack)
 {
-    int flag;
-    int vis[8];
     int k;
+    int flag;
 
+    k = 0;
     flag = 0;
-    k = 0; //чекает с самого себя
-    vis[0] = stack[2 * i] + 1;  //+x
-    vis[1] = stack[2 * i + 1]; //y
-    vis[2] = stack[2 * i];  //x
-    vis[3] = stack[2 * i + 1] + 1;  //+y
-    vis[4] = stack[2 * i] - 1;  //-x
-    vis[5] = stack[2 * i + 1];  //y
-    vis[6] = stack[2 * i];  //x
-    vis[7] = stack[2 * i + 1] - 1;  //-y
-
-    printf("stack [0] %d\n", stack[0]);
-    printf("stack [1] %d\n", stack[1]);
-    printf("stack [2] %d\n", stack[2]);
-    printf("stack [3] %d\n", stack[3]);
-    printf("stack [4] %d\n", stack[4]);
-    printf("stack [5] %d\n", stack[5]);
-    printf("stack [6] %d\n", stack[6]);
-    printf("stack [7] %d\n", stack[7]);
-
-
-    printf("vis [0] %d\n", vis[0]);
-    printf("vis [1] %d\n", vis[1]);
-    printf("vis [2] %d\n", vis[2]);
-    printf("vis [3] %d\n", vis[3]);
-    printf("vis [4] %d\n", vis[4]);
-    printf("vis [5] %d\n", vis[5]);
-    printf("vis [6] %d\n", vis[6]);
-    printf("vis [7] %d\n", vis[7]);
-
     while (k < 4)
     {
-        if ((vis[0] == stack[2 * k]) && (vis[1] == stack[2 * k + 1]))
+        if ((vis[0] == stack[k]) && (vis[1] == stack[k + 4]))
             flag++;
-        if ((vis[2] == stack[2 * k]) && (vis[3] == stack[2 * k + 1]))
+        if ((vis[2] == stack[k]) && (vis[3] == stack[k + 4]))
             flag++;
-        if ((vis[4] == stack[2 * k]) && (vis[5] == stack[2 * k + 1]))
+        if ((vis[4] == stack[k]) && (vis[5] == stack[k + 4]))
             flag++;
-        if ((vis[6] == stack[2 * k]) && (vis[7] == stack[2 * k + 1]))
+        if ((vis[6] == stack[k]) && (vis[7] == stack[k + 4]))
             flag++;
         k++;
     }
     return (flag);
 }
 
-static int validate_3(int *stack)
+static  int getvid(int *stack, int i)
 {
-    int i;
-    int k;
-    int j;
+    int flag;
+    int vis[8];
+
+    vis[0] = stack[i] + 1;  //+x
+    vis[1] = stack[i + 4]; //y
+    vis[2] = stack[i];  //x
+    vis[3] = stack[i + 4] + 1;  //+y
+    vis[4] = stack[i] - 1;  //-x
+    vis[5] = stack[i + 4];  //y
+    vis[6] = stack[i];  //x
+    vis[7] = stack[i + 4] - 1;  //-y
+
+    flag = func_flag(vis, stack);
+    printf("flag = %d\n",flag);
+    return (flag);
+}
+
+static t_fig *validate_3(int *st, int l)
+{
+    int     i;
+    int     k;
+    static  t_fig   *head;
 
     i = 0;
     k = 0;
-    j = 0;
+
+    if (l == 1)
+        head = tetri_new();
     while (i < 4)
     {
-        k = k + getvid(stack, i);
+        k = k + getvid(st, i);
         i++;
     }
-    printf("%d\n", k);
+    printf("k(sum flag) = %d\n",k);
     if (k >= 6)
-        return (0);
-    return (-1);
+       return(create_list(st, &head,l));
+    return (NULL);
 }
 
-static int validate_2(char *str)
+static int validate_n(char *str)
+{
+
+    int y;
+    int x;
+
+    y = 0;
+    while (!(*str == '\0' && *(str - 1) == '\n') &&
+           !(*str == '\n' && *(str - 1) == '\n'))
+    {
+        x = 0;
+        while (*str != '\n')
+        {
+            x++;
+            str++;
+        }
+        if(x != 4)
+            return(-1);
+        y++;
+        str++;
+    }
+    return (y == 4) ? (1) : (-1);
+
+}
+
+static t_fig *validate_2(char *str, int l)
 {
     int k;
-    int i;
-    int x;
-    int y;
+    int arr[2];
     int stack[8];
 
     k = 0;
-    i = 0;
-    x = -1;
-    y = -1;
-    while (!(str[i] == '\0' && str[i - 1] == '\n') &&
-    !(str[i] == '\n' && str[i - 1] == '\n')) /////////
+    arr[1] = 0;
+    while (!(*str == '\0' && *(str - 1) == '\n') &&
+    !(*str == '\n' && *(str- 1) == '\n'))
     {
-        y++;
-        while (str[i] != '\n') //чекоть
+        arr[0] = 0;
+        while (*str != '\n')
         {
-            x++;
-            if (str[i] == '#') {
-                stack[k] = x;
-                stack[++k] = y;
+            if (*str == '#')
+            {
+                stack[k] = arr[0];
+                printf("stack_X[%d] = %d\n",k,stack[k]);
+                stack[k + 4] = arr[1];
+                printf("stack_Y[%d] = %d\n",k,stack[k+4]);
+
                 k++;
             }
-            i++;
+            arr[0]++;
+            str++;
         }
-        x = -1;
-        i++;
-        printf("%c + 1\n", str[i + 1]);
-        printf("%c\n", str[i]);
-        printf("%c - 1\n", str[i - 1]);
-        printf("%c - 2\n", str[i - 2]);
-
-    }
-    if (y != 3)
-        return (-1);
-    if (k != 8)
-        return (-1);
-    return (validate_3(stack) == 0) ? (0) : (-1);
+        arr[1]++;
+        str++;
+            }
+    printf("l-1 = %d\n",l-1);
+    return (validate_3(stack, l));
 }
 
-int     main_validate(char *str, int count) //отправлять на валидацию по 21 символу
+t_fig     *main_validate(char *str, int count) //отправлять на валидацию по 21 символу
 {
     char   buf_str[21 + 1];
     int i;
+    t_fig   *list;
+    int l;
 
-    i = 0;
-    if (count % 21 != 0) //МЫ ЖЕ СЧИТАЛИ РОВНО 21 СИМВОЛ??
-        return (-1);
-    while (*str != '\0')
+    l = 0;
+    list = NULL;
+    if (count % 21 != 0)
+        return (NULL);
+    while (!(*(str - 1) == '\0' && *(str - 2) == '\n'))
     {
+        i = 0;
         while (i < 21)
         {
             buf_str[i] = *str;
             i++;
             str++;
         }
-        if (buf_str[i - 1] != '\0')
-            buf_str[i] = '\0';
-        i = 0;
+        l++;
+        buf_str[i] = '\0';  //buf[21]='\0'(22-ой элемент = '\0')
         if (validate_1(buf_str) == -1)
-            return (-1);
-        if (validate_2(buf_str) == -1)
-            return (-1);
+            return (NULL);
+        if (validate_n(buf_str) == -1)
+            return (NULL);
+        if ((list = validate_2(buf_str, l)) == NULL)
+            return (NULL);
     }
-    return (0);
+    return (list);
 }

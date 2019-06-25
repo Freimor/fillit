@@ -258,6 +258,33 @@ libft/ft_countwords_withnullstr.c.s:
 	$(MAKE) -f CMakeFiles/Fillit_marina.dir/build.make CMakeFiles/Fillit_marina.dir/libft/ft_countwords_withnullstr.c.s
 .PHONY : libft/ft_countwords_withnullstr.c.s
 
+libft/ft_freemem.o: libft/ft_freemem.c.o
+
+.PHONY : libft/ft_freemem.o
+
+# target to build an object file
+libft/ft_freemem.c.o:
+	$(MAKE) -f CMakeFiles/Fillit_marina.dir/build.make CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.o
+.PHONY : libft/ft_freemem.c.o
+
+libft/ft_freemem.i: libft/ft_freemem.c.i
+
+.PHONY : libft/ft_freemem.i
+
+# target to preprocess a source file
+libft/ft_freemem.c.i:
+	$(MAKE) -f CMakeFiles/Fillit_marina.dir/build.make CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.i
+.PHONY : libft/ft_freemem.c.i
+
+libft/ft_freemem.s: libft/ft_freemem.c.s
+
+.PHONY : libft/ft_freemem.s
+
+# target to generate assembly for a file
+libft/ft_freemem.c.s:
+	$(MAKE) -f CMakeFiles/Fillit_marina.dir/build.make CMakeFiles/Fillit_marina.dir/libft/ft_freemem.c.s
+.PHONY : libft/ft_freemem.c.s
+
 libft/ft_isalnum.o: libft/ft_isalnum.c.o
 
 .PHONY : libft/ft_isalnum.o
@@ -2064,6 +2091,9 @@ help:
 	@echo "... libft/ft_countwords_withnullstr.o"
 	@echo "... libft/ft_countwords_withnullstr.i"
 	@echo "... libft/ft_countwords_withnullstr.s"
+	@echo "... libft/ft_freemem.o"
+	@echo "... libft/ft_freemem.i"
+	@echo "... libft/ft_freemem.s"
 	@echo "... libft/ft_isalnum.o"
 	@echo "... libft/ft_isalnum.i"
 	@echo "... libft/ft_isalnum.s"

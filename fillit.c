@@ -12,57 +12,85 @@
 
 #include "fillit.h"
 
-static void tetri_build(t_fig **head,t_fig **tetri, int i, int x, int y)
-{
-    if (*tetri == NULL)
-    {
-        *tetri = tetri_new();
-    }
-    (*tetri)->x_arr[i] = x;
-    (*tetri)->y_arr[i] = y;
-    if (i == 3)
-        tetri_add_w_copy(head, tetri);
-}
 
-t_fig   *detect_and_createtetri(char *str)
+t_fig   *create_list(int *st, t_fig **head, int l)
 {
-    int		x;
-    int		y;
     int		i;
-    t_fig   *head;
-    t_fig	*tetri;
+    int     j;
+    static  t_fig   *list;
 
     i = 0;
-    y = 0;
-    head = NULL;
-    tetri = NULL;
-    while (*str != '\n' && *(str + 1) != '\0')
+    list = new_list(head,l);
+    while(i < 4)
     {
-        x = 0;
-        while (*str != '\n')
-        {
-            if (*str == '#')
-            {
-                tetri_build(&head, &tetri, i, x, y);
-                i++;
-            }
-            str++;
-            x++;
-        }
-        y++;
-        str++;
+        list->x_arr[i] = st[i];
+        printf("list.x_%d\n",list->x_arr[i]);
+        list->y_arr[i] = st[i + 4];
+        printf("list.y_%d\n",list->y_arr[i]);
+        i++;
     }
-    return (head);
+    return (*head);
+}
+
+
+t_fig			*new_list(t_fig **head, int l)
+{
+    t_fig	*tmp;
+    t_fig	*new;
+    int     i;
+
+    i = 0;
+    tmp = *head;
+    if (l == 1)
+    {
+        (*head)->index = 0;
+        return (*head);
+    }
+    new = tetri_new();
+    while (tmp->next != NULL)
+   {
+      /*  printf("tmp->index= %d\n",tmp->index);
+        for(int j = 0; j < 4; j++)
+        {
+            printf("*tmp->x[%d]_%d\n",j,tmp->x_arr[j]);
+            printf("*tmp->y[%d]_%d\n",j,tmp->y_arr[j]);
+
+        }*/
+       tmp = tmp->next;
+     /*  printf("**tmp->index= %d\n",tmp->index);
+       for(int j = 0; j < 4; j++)
+       {
+           printf("**tmp->x[%d]_%d\n",j,tmp->x_arr[j]);
+           printf("**tmp->y[%d]_%d\n",j,tmp->y_arr[j]);
+
+       }*/
+    }
+   // printf("tmp->index2= %d\n",tmp->index);
+
+    new->index = l - 1;
+    tmp->next = new;
+   /* printf("***tmp->index= %d\n",new->index);
+    for(int j = 0; j < 4; j++)
+    {
+        printf("***tmp->x[%d]_%d\n",j, new->x_arr[j]);
+        printf("***tmp->y[%d]_%d\n",j,new->y_arr[j]);
+
+    }*/
+    return (new);
 }
 
 char	*reading(int fd)
 {
-	int		count;
 	char	str[546];
 	char    *tmp;
+    int     count;
 
-	while ((count = read(fd, str, 546)) >= 20)
+	tmp = NULL;
+	while ((count =read(fd, str, 546)) >= 20)
+	{
+	    str[count] = '\0';
         tmp = strcut(str);
-    return (str);
+    }
+    return (tmp);
 }
 

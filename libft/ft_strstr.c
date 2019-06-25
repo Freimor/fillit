@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bcharity <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/15 16:01:44 by sskinner          #+#    #+#             */
-/*   Updated: 2019/04/17 16:13:37 by sskinner         ###   ########.fr       */
+/*   Created: 2019/04/19 13:36:40 by bcharity          #+#    #+#             */
+/*   Updated: 2019/05/01 15:55:15 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,26 @@
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {
-	const char	*hay;
-	const char	*need;
+	const char *ph;
+	const char *pn;
 
-	need = needle;
-	if (needle[0] == '\0')
-		return ((char *)haystack);
-	while (*haystack)
+	pn = needle;
+	while (haystack)
 	{
-		hay = haystack;
-		while (*haystack == *needle)
+		ph = haystack;
+		while (*(haystack) == *(needle) || !(*needle))
 		{
-			needle++;
-			haystack++;
-			if (*needle == '\0')
-				return ((char *)hay);
-			if (*haystack != *needle)
+			if (!(*needle))
 			{
-				haystack = hay;
-				break ;
+				return (char*)ph;
 			}
+			haystack++;
+			needle++;
 		}
-		needle = need;
-		haystack++;
+		if (!*haystack)
+			return (NULL);
+		needle = pn;
+		haystack = ph + 1;
 	}
 	return (NULL);
 }
