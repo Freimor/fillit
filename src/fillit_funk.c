@@ -6,11 +6,11 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 16:41:57 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 19:35:46 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/26 20:53:58 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fillit.h"
+#include "../includes/fillit.h"
 
 int		fill_map(int a, t_fig *list, char **map)
 {

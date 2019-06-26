@@ -6,11 +6,11 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:49:59 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 19:36:40 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/26 20:54:18 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fillit.h"
+#include "../includes/fillit.h"
 
 int		validate_1(char *str)
 {

@@ -6,16 +6,15 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 16:41:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 19:36:12 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/26 21:00:18 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fillit.h"
+#include "../includes/fillit.h"
 
 t_fig	*create_list(int *st, t_fig **head, int l)
 {
 	int				i;
-	int				j;
 	static t_fig	*list;
 
 	i = 0;

@@ -6,53 +6,41 @@
 #    By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/26 19:29:34 by sskinner          #+#    #+#              #
-#    Updated: 2019/06/26 20:05:40 by sskinner         ###   ########.fr        #
+#    Updated: 2019/06/26 20:52:03 by sskinner         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fillit
 HEADER = fillit.h
-FLAGS = -Wall -Wextra -Werror -pedantic -std=c99
-OBJS = $(SRCS:%.c=%.o)
+FLAGS = -Wall -Wextra -Werror
+OBJS = $(SRCSSS:%.c=%.o)
+INC_DIR	= includes/
+LIB = libft/libft.a
 
-SRC_DIR	:= ./src
-INC_DIR	:= ./includes
-OBJ_DIR	:= ./obj
-LIB_DIR	:= ./lib
-
-SRC1 =	fillit_funk.c fillit_fink_2.c main.c map_funk.c tetri_funk.c valid.c \
+SRCSSS 	=	src/fillit_funk.c src/fillit_funk_2.c src/main.c src/map_funk.c \
+			src/tetri_funk.c src/valid.c \
 
 all: $(NAME)
 
-$(NAME):$(OBJS) | lib
-	gcc $(FLAGS) -o $(NAME) -L ./libft/libft.h $(OBJS)
+$(NAME):$(OBJS) $(LIB) | build
+	gcc $(FLAGS) $(OBJS) -o $(NAME) $(LIB)
 
-$(OBJ_DIR)/%.o:$(SRC_DIR)/%.c
+$(OBJS):$(LIB)
+	gcc $(FLAGS) -c $(SRCSSS)
 
+$(LIB):
+	make -C ./libft
+	make clean -C ./libft
 
-$(NAME): $(OBJ)
-	gcc $(FLAGS) $(OBJS)  -o $(NAME)
-
-lib:
-	$(MAKE) -C ./libft
-	$(MAKE) clean -C ./libft
-
-clean:
-	rm -rf $(OBJ_DIR)
-
-fclean: clean
-	rm -rf $(NAME)
-
-re:
-	@$(MAKE) fclean --no-print-directory
-	@$(MAKE) all --no-print-directory
-
-relibs:
-	@$(MAKE) -C $(L_FT) re --no-print-directory
-	@$(MAKE) re --no-print-directory
+build:
+	mkdir obj
 
 clean:
 	rm -f $(OBJS)
+
 fclean: clean
+	make fclean -C ./libft
 	rm -f $(NAME)
-re: fclean all
+
+re:
+	fclean all

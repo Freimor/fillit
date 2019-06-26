@@ -6,7 +6,7 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:25:58 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 19:22:25 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/26 20:54:39 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <sys/uio.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "./libft/libft.h"
+# include "../libft/libft.h"
 
 typedef struct s_figure	t_fig;
 

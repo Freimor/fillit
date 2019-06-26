@@ -6,11 +6,11 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 16:29:20 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 19:36:21 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/26 20:54:04 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fillit.h"
+#include "../includes/fillit.h"
 
 t_fig	*validate_main(char *str, int count)
 {

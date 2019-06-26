@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FIL_FIN"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FIL_FIN">
+				<Option output="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/FIL_FIN" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/sskinner/gitex/FIL_FIN/includes"/>
+					<Add directory="/Users/sskinner/gitex/FIL_FIN/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 FIL_FIN"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FIL_FIN/fast">
+				<Option output="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/FIL_FIN" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sskinner/gitex/FIL_FIN/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/sskinner/gitex/FIL_FIN/includes"/>
+					<Add directory="/Users/sskinner/gitex/FIL_FIN/libft"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 FIL_FIN/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sskinner/gitex/FIL_FIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/includes/fillit.h">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_atoi.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_bzero.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_countwords_withnullstr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_freemem.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_isalnum.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_isalpha.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_isascii.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_isdigit.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_isprint.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_itoa.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstadd.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstcheck_contentsize.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstdel.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstdel_contentsize.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstdelone.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstiter.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstmap.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_lstnew.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memalloc.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memccpy.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memchr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memcmp.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memcpy.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memdel.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memmove.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_memset.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putchar.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putchar_fd.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putendl.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putendl_fd.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putnbr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putnbr_fd.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putstr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_putstr_fd.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_str2del.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strcat.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strchr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strclr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strcmp.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strcopyuntil.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strcpy.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strdel.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strdup.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strequ.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_striter.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_striteri.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strjoin.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strlcat.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strlen.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strmap.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strmapi.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strncat.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strncmp.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strncpy.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strnd.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strndup.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strnequ.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strnew.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strnstr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strrchr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strreverse.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strsplit.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strstr.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strsub.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_strtrim.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_tolower.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_toupper.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/ft_wordlen.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/libft/libft.h">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/src/fillit_funk.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/src/fillit_funk_2.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/src/main.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/src/map_funk.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/src/tetri_funk.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/src/valid.c">
+			<Option target="FIL_FIN"/>
+		</Unit>
+		<Unit filename="/Users/sskinner/gitex/FIL_FIN/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

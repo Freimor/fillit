@@ -6,11 +6,11 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/02 16:29:22 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 19:36:34 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/26 20:54:14 by sskinner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/fillit.h"
+#include "../includes/fillit.h"
 
 t_fig		*tetri_new(void)
 {
