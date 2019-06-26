@@ -1,3 +1,0 @@
-/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/sskinner/gitex/Fillit_marina/cmake-build-debug/CMakeFiles/Fillit_marina.dir
