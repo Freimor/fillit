@@ -84,4 +84,11 @@ int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
 char		*ft_freemem(char **split, size_t i);
+char		*ft_strreverse(const char *str);
+char		*ft_strndup(const char *s1, size_t n);
+char		*ft_strcopyuntil(char *str, int c);
+void		ft_str2del(char ***s);
+t_list		*ft_lstcheck_contentsize(t_list **alst, size_t size);
+int			ft_lstdel_contentsize(t_list **alst, size_t size);
+int			ft_countwords_withnullstr(char const *s, char c);
 #endif

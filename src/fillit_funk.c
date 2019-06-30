@@ -6,50 +6,45 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/26 16:41:57 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 20:53:58 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/27 18:51:58 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fillit.h"
 
-int		fill_map(int a, t_fig *list, char **map)
+void		clear_tetr(t_fig *list, int dx, int dy, char **map)
 {
-	int	disp[2];
-	int	*x;
-	int	*y;
+	int		i;
+	int		*x;
+	int		*y;
 
-	disp[0] = list->x_arr;
-	disp[1] = list->y_arr;
-	disp[1] = -1;
-	while (++disp[1] < a)
+	i = 0;
+	x = list->x_arr;
+	y = list->y_arr;
+	while (i < 4)
 	{
-		disp[0] = -1;
-		while (++disp[0] < a)
-		{
-			if (check_avail(x, y, disp, map))
-			{
-				to_map(list, disp, map);
-				if (list->next == NULL || fill_map(a, list->next, map))
-					return (1);
-			}
-		}
+		map[y[i] + dy][x[i] + dx] = '.';
+		i++;
 	}
-	if (list->index == 0)
-		return (-1);
-	return (0);
 }
 
-int		check_avail(int *x, int *y, int disp[2], char **map)
+int			check_avail(t_fig *list, int dx, int dy, char **map)
 {
 	int	i;
 	int	nx;
 	int	ny;
+	int	*x;
+	int	*y;
 
+	x = list->x_arr;
+	y = list->y_arr;
 	i = 0;
 	while (i < 4)
 	{
-		nx = x[i] + disp[0];
-		ny = y[i] + disp[1];
+		nx = x[i] + dx;
+		ny = y[i] + dy;
+		if (map[ny] == NULL)
+			return (0);
 		if (map[ny][nx] == '.')
 			i++;
 		else if (map[ny][nx] != '.')
@@ -58,10 +53,10 @@ int		check_avail(int *x, int *y, int disp[2], char **map)
 	return (1);
 }
 
-int		func_flag(const int vis[8], int *stack)
+int			func_flag(const int vis[8], const int *stack)
 {
-	int k;
-	int flag;
+	int	k;
+	int	flag;
 
 	k = 0;
 	flag = 0;
@@ -80,7 +75,7 @@ int		func_flag(const int vis[8], int *stack)
 	return (flag);
 }
 
-int		getvid(int *stack, int i)
+int			getvid(int *stack, int i)
 {
 	int	flag;
 	int	vis[8];
@@ -97,7 +92,7 @@ int		getvid(int *stack, int i)
 	return (flag);
 }
 
-char	**create_map(t_fig *list, int a)
+char		**create_map(t_fig *list, int a)
 {
 	char	**map;
 	int		f;

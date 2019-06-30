@@ -6,14 +6,13 @@
 /*   By: sskinner <sskinner@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 17:25:58 by sskinner          #+#    #+#             */
-/*   Updated: 2019/06/26 20:54:39 by sskinner         ###   ########.fr       */
+/*   Updated: 2019/06/27 18:57:11 by bcharity         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLIT_H
 # define FILLIT_H
 # include <fcntl.h>
-# include <stdio.h>
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <unistd.h>
@@ -32,8 +31,8 @@ struct		s_figure
 char		**create_map (t_fig *list, int a);
 char		**zero_map(int a);
 int			fill_map(int a, t_fig *fig, char **map);
-int			check_avail(int *x, int *y, int disp[2], char **map);
-void		to_map(t_fig *list, int disp[2], char **map);
+int			check_avail(t_fig *list, int dx, int dy, char **map);
+void		to_map(t_fig *list, int dx, int dy, char **map);
 char		*free_map(char **map);
 void		print_map(char **map);
 char		*reading(int ac, char *av);
@@ -48,7 +47,8 @@ t_fig		*validate_3(char *str, int l);
 t_fig		*validate_sub(char *buf, int l);
 t_fig		*validate_main(char *str, int count);
 t_fig		*create_list(int *st, t_fig **head, int l);
-int			func_flag(const int vis[8], int *stack);
+int			func_flag(const int vis[8], const int *stack);
 int			getvid(int *stack, int i);
 int			min_edge(t_fig *list);
+void		clear_tetr(t_fig *list, int dx, int dy, char **map);
 #endif

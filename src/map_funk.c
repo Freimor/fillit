@@ -12,7 +12,7 @@
 
 #include "../includes/fillit.h"
 
-void		to_map(t_fig *list, int disp[2], char **map)
+void		to_map(t_fig *list, int dx, int dy, char **map)
 {
 	int		*x;
 	int		*y;
@@ -25,7 +25,7 @@ void		to_map(t_fig *list, int disp[2], char **map)
 	c = list->index + 65;
 	while (i < 4)
 	{
-		map[y[i] + disp[1]][x[i] + disp[0]] = c;
+		map[y[i] + dy][x[i] + dx] = c;
 		i++;
 	}
 }
@@ -49,13 +49,14 @@ int			min_edge(t_fig *list)
 
 char		**zero_map(int a)
 {
-	int		i;
 	int		j;
 	char	**map;
 
 	j = 0;
-	map = ft_memalloc((a + 2) * sizeof(char *));
-	while (j < a + 1)
+	if (!(map = malloc((a + 1) * sizeof(char *))))
+		return (NULL);
+	map[a] = NULL;
+	while (j < a)
 	{
 		map[j] = ft_memalloc((a + 2) * sizeof(char));
 		j++;

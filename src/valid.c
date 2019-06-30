@@ -17,6 +17,9 @@ int		validate_1(char *str)
 	int k;
 
 	k = 0;
+	if (!((str[19] == '\n' && str[20] == '\n')
+		|| (str[19] == '\n' && str[20] == '\0')))
+		return (-1);
 	while (!(*str == '\0' && *(str - 1) == '\n')
 	&& !(*str == '\n' && *(str - 1) == '\n'))
 	{
@@ -109,10 +112,20 @@ t_fig	*validate_sub(char *buf, int l)
 	t_fig	*list;
 
 	if (validate_1(buf) == -1)
+	{
+		free(buf);
 		return (NULL);
+	}
 	if (validate_2(buf) == -1)
+	{
+		free(buf);
 		return (NULL);
+	}
 	if ((list = validate_3(buf, l)) == NULL)
+	{
+		free(buf);
 		return (NULL);
+	}
+	free(buf);
 	return (list);
 }

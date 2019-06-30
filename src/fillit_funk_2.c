@@ -18,7 +18,8 @@ t_fig	*create_list(int *st, t_fig **head, int l)
 	static t_fig	*list;
 
 	i = 0;
-	list = new_list(head, l);
+	if (!(list = new_list(head, l)))
+		tetri_del(head);
 	while (i < 4)
 	{
 		list->x_arr[i] = st[i];
@@ -62,12 +63,16 @@ char	*reading(int ac, char *av)
 		return (NULL);
 	}
 	tmp = NULL;
-	fd = open(av, O_RDONLY);
+	if ((fd = open(av, O_RDONLY)) == -1)
+		return (NULL);
 	count = read(fd, str, 546);
 	str[count] = '\0';
 	tmp = ft_strndup(str, count);
-	if ((count = read(fd, str, 546)) > 0)
+	if ((read(fd, str, 546)) > 0)
+	{
+		close(fd);
 		return (NULL);
+	}
 	close(fd);
 	return (tmp);
 }
